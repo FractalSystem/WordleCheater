@@ -19,7 +19,7 @@ To generate today's solution the script `wordle_cheater.py` performs the followi
 1. A list of the 2315 words extracted from Wordle's source is loaded from `data/wordle_words.json`
 2. The number of days between 19 June 2021 and today's date is calculated
 3. An index `i` is generated with:
-```(the number of days from step 2) % (length of the Wordle words list)```
+```i = (the number of days from step 2) % (length of the Wordle words list)```
 4. The day's solution is the word at the generated index of Wordle's word list
 
 ## This Program
