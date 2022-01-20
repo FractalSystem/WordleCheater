@@ -5,10 +5,10 @@ time_format = "%d %B %Y"
 
 
 # Generate a file with the next days_to_generate days of solutions
-def generate_multiple_solutions_file(days_to_generate, filename=None):
-    dt_now = datetime.now()-timedelta(days=5)
+def generate_multiple_solutions_file(days_to_generate_positive, days_to_generate_negative, filename=None):
+    dt_now = datetime.now()-timedelta(days=days_to_generate_negative)
     s = ""
-    for i in range(days_to_generate):
+    for i in range(days_to_generate_positive):
         dt = dt_now + timedelta(days=i)
         solution = wordle_cheater.generate_solution(dt)
         s += f"{dt.strftime(time_format)}: {solution}\n"
@@ -19,4 +19,4 @@ def generate_multiple_solutions_file(days_to_generate, filename=None):
 
 
 if __name__ == "__main__":
-    generate_multiple_solutions_file(1000, "out.txt")
+    generate_multiple_solutions_file(10000, 19, "generated_solutions.txt")

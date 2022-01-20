@@ -7,6 +7,7 @@ start_dt = datetime(2021, 6, 19, 0, 0, 0, 0)
 # Wordle's word list, extracted from the Wordle source
 with open("data/wordle_words.json", "r") as f:
     words = json.loads(f.read())
+    print(len(words))
 
 
 # Returns the generated solution for a given datetime
