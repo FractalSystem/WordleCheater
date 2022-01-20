@@ -2,6 +2,8 @@
 
 Unlike the numerous existing Wordle solution finders this application does not seek to solve Wordle puzzles directly, but rather reverse-engineers the Wordle source to determine the solution on any given day.
 
+As far as I'm aware this is the first published example of such an approach.
+
 Wordle selects the daily solution from a corpus of 2315 five letter words locally using a deterministic algorithm to ensure all users of the website have the same puzzle every day.
 
 Contrary to best practices, which would suggest that this should be done server-side to preserve the scarcity of solutions (a key draw of Wordle), this action is performed locally each time a user loads the website.
@@ -10,7 +12,7 @@ Contrary to best practices, which would suggest that this should be done server-
 
 This script will generate daily Wordle solutions for an arbitary time period, due to the deterministic nature of Wordle's puzzle selection algorithm.
 
-Running `generate_solutions.py` on at least Python 3.9 will by generate 10,000 future solutions and 20 previous solutions (including today's) for validation. 
+Running `generate_solutions.py` on at least Python 3.9 will by generate 10,000 future solutions and 20 previous solutions (including today's) for validation purposes. 
 
 Solutions from 1 January 2022 to May 2049 are saved in the file `generated_solutions.txt` and will remain valid provided Wordle does not adjust its selection algorithm. This can be verified by checking the generated solution for today and comparing it to the live Wordle game [See here](https://www.powerlanguage.co.uk/wordle/)
 
