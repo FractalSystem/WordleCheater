@@ -30,12 +30,12 @@ This script will generate daily Wordle solutions for an arbitary time period, du
 
 Running `generate_solutions.py` on at least Python 3.9 will by generate 10,000 future solutions and 20 previous solutions (including today's) for validation purposes. 
 
-Solutions from 1 January 2022 to May 2049 are saved in the file `generated_solutions.txt` and will remain valid provided Wordle does not adjust its selection algorithm. This can be verified by checking the generated solution for today and comparing it to the live Wordle game [See here](https://www.powerlanguage.co.uk/wordle/)
+Solutions from 1 January 2022 to May 2049 are saved in the file `generated_solutions.txt` and will remain valid provided Wordle does not adjust its selection algorithm. This can be verified by checking the generated solution for today and comparing it to the live Wordle game [here](https://www.powerlanguage.co.uk/wordle/).
 
 ## Javascript magic
 
-The day's solution can also be extracted directly from your browser by entering the following code into the address bar of your browser while on the [Wordle page](https://www.powerlanguage.co.uk/wordle/)
+The day's solution can also be extracted directly from your browser by entering the following code into the address bar of your browser while on the [Wordle page](https://www.powerlanguage.co.uk/wordle/):
 
 ```javascript:alert(new wordle.bundle.GameApp().solution)```
 
-Note that most modern browsers will require that the `javascript:` section of the code is manually typed (rather than pasted)
+Note that most modern browsers will require that the `javascript:` section of the code is manually typed (rather than pasted).
