@@ -1,5 +1,7 @@
 # WordleCheater – Wordle Solution Generator
 
+**A list of all Wordle solutions until ~2050 can be found [here](generated_solutions.txt)**
+
 Unlike the numerous existing Wordle solution finders this application does not seek to solve Wordle puzzles directly, but rather reverse-engineers the Wordle source to determine the solution **on any given day**.
 
 As far as I'm aware this is the first published example of such an approach.
